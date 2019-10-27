@@ -18,5 +18,5 @@ browser.find_element_by_css_selector('#book').click()
 x = browser.find_element_by_css_selector('#input_value').text
 browser.find_element_by_css_selector('#answer').send_keys(calc(x))
 submit = browser.find_element_by_css_selector('#solve')
-#browser.execute_script("return arguments[0].scrollIntoView(true);", submit)
+browser.execute_script("return arguments[0].scrollIntoView(true);", submit)
 submit.click()
